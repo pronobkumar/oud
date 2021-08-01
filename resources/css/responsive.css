@@ -1,0 +1,205 @@
+/*=====================================
+               COMMON CSS
+========================================*/
+.row{
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* Mobile Menu */
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.mobile-menu span {
+    color: #fff;
+    font-size: 3rem;
+    float: right;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    color: #fff;
+    font-size: 2rem;
+    float: right;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.mobile-menu span:hover {
+    color: #ea0d60;
+}
+
+#hamburger{
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 9999;
+
+}
+
+.menu-items a {
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 3rem 0 ;  
+}
+
+.menu-items a:hover {
+    color: #ea0d60;
+}
+.menu-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+/*=====================================
+               MEDIA QUERY
+========================================*/
+@media screen and (max-width:1200px){
+    .row{
+        width: 100%;
+    }
+    #speci-head  {
+
+        margin-top: 3rem;
+    }
+
+    #speci-head p {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+
+    .row{
+        padding: 0 2.5rem;
+    }
+
+    .hero-text-box h1 {
+        font-size: 55%;
+       
+    }
+}
+
+@media screen and (max-width:980px){
+    #price .price-content-box {
+        margin-top:-5rem;
+    }
+}
+@media screen and (max-width:768px) {
+    #overview .overview-text-box,
+    #details .details-text-box,
+    #contact .contact-text-box,
+    #gallery .gallery-text-box,
+    #journey .journey-text-box{
+        width: 100%;
+        margin: auto;
+    }
+    #overview {
+        height: 60vh;
+    }
+    #price .heading {
+        margin-left:0;
+        margin-bottom:0;
+    }
+    #price{
+        height: 70vh;
+    }
+
+    .speci-text-box{
+        margin-top: 5rem;
+    }
+    html {
+        font-size: 55%;
+    }
+    .mobile-menu span {
+        display: block;
+    }
+    .nav-bar{
+        display: none;
+
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .row{
+        width: 90%;
+        margin: auto;
+        padding: 0 2rem;
+        overflow: hidden;
+    }
+    html {
+        font-size: 45%;
+    }
+
+    #price{
+        height: 50vh;
+    }
+    #price .price-content-box {
+        margin-top:10rem;
+    }
+
+    #overview .overview-text-box,
+    #details .details-text-box,
+    #contact .contact-text-box,
+    #gallery .gallery-text-box,
+    #journey .journey-text-box{
+        width: 100%;
+        margin: auto;
+    }
+    
+
+    #footer .col {
+        width: 49.8%;
+        text-align: center;
+        
+    }
+    .form-container input,
+    .form-container textarea {
+        font-size: 200%;
+    }
+
+    .form-container .btn-contact{
+        float: none;
+    }
+
+    #gallery .container .col {
+
+        width: 20%;
+        margin: 0 1rem;
+
+    }
+    #gallery .container .col img{
+
+        width: 18rem;
+    }
+
+    #journey .box-container .col {
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+   
+}

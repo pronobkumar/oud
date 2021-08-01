@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+
+/*=======================================
+                COMMON CSS
+=========================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:'Lato', sans-serif ;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.row{
+    max-width: 114rem;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+a ,a:hover {
+    text-decoration: none;
+    margin: 0;
+}
+
+p{
+    font-size: 2rem;
+}
+
+
+h1{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+}
+h2{ 
+    font-size: 6.5rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+h2,h3,h4{
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    background: #ea0d60;
+    color: #fff;
+    width: 10rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+ul {
+    padding-left: 0;
+}
+/*=======================================
+                HOME
+=========================================*/
+#home{
+    background: url(img/hero.png) no-repeat center / cover;
+    height: 100vh;
+    position: relative;
+}
+
+#home nav .row {
+   padding-top: 2rem;
+}
+
+#home nav ul li:hover a{
+    color: #ea0d60;
+}
+
+#home .row .logo {
+    float: left;
+}
+#home h1{
+    color: #fff;
+}
+#home .row ul {
+    float: right;
+}
+
+#home .row ul li {
+    list-style: none;
+    display: inline-block;
+    
+    
+}
+#home .row ul li a {
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+#home .hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+#home .hero-text-box h1 {
+    font-size: 6rem;
+}
+
+#home .hero-text-box .btn-hero {
+    margin-top: 2.5rem;
+}
+
+.slide {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    float: right;
+}
+
+/* Sticky Menu */
+
+#home .uk-active {
+    background: #000;
+}
+/*=======================================
+             02.OVERVIEW
+=========================================*/
+
+#overview {
+    height: 90vh;
+    background: url(img/overview.png) no-repeat center / cover ;
+}
+#overview .overview-text-box{
+    width: 65rem;
+    margin: auto;
+}
+
+#overview .overview-text-box h2{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+#overview .overview-text-box p{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.8;
+   
+}
+/*=======================================
+             03.OFF
+=========================================*/
+#off{
+    text-align: center;
+    color: #fff;
+    background: url(img/cta.png) no-repeat center / cover;
+    padding-top: 4rem;
+}
+
+#off h2 {
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+#off .btn-off {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/*=======================================
+             04.DETAILS
+=========================================*/
+#details{
+    padding-top:5rem;
+}
+
+#details .details-text-box {
+    width: 60rem;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+#details .details-text-box h2 {
+    color: #000;
+}
+#details .details-text-box p {
+    font-size: 2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+#details .car-img {
+    text-align: center;
+    margin: auto;
+}
+#details .car-img h2 {
+    opacity: 0.1;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.car-img img {
+    width: 70rem;
+    z-index: 100;
+    margin-top:-2.5rem;
+}
+
+#details .front {
+    margin-bottom: 3rem;
+}
+
+#details .check {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+#details p a {
+    text-decoration: underline;
+    color: #ea0d60;
+}
+/*=======================================
+                PRICE
+=========================================*/
+
+#price {
+    background: url(img/price.png) no-repeat center / cover;
+    height: 80vh;
+    color: #fff;
+    position: relative;
+    padding-top: 5rem;
+}
+
+#price .heading {
+    margin-left: 30rem;
+    margin-bottom: 2.5rem;
+}
+
+#price .price-content-box {
+
+    position: absolute;
+    width: 50rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    margin-top: 5rem;
+
+}
+
+#price .price-content-box h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+#price .price {
+    font-weight: 100;
+    color: #ea0d60;
+    font-size: 8rem;
+    margin-top: 4rem;
+    text-shadow: 2px 2px 3px #ea0d60;
+}
+
+#price .btn-price {
+    margin-top: 4.5rem;
+}
+/*=======================================
+              FOOTER
+=========================================*/
+
+#footer {
+    background: #000;
+    color: #fff;
+    padding-top: 10rem ;
+}
+
+#footer .col h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#footer .col li {
+    list-style: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#footer .col li a
+ {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.col .highlight {
+    color: #ea0d60;
+}
+
+ #footer hr {
+    border: .1rem solid #1a1a1a ;
+}
+
+/* Copyright */
+
+#footer .copyright {
+    float: left;
+    font-size: 1rem;
+}
+
+#footer .social-icon {
+    float: right;
+}
+
+.social-icon li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.social-icon li a i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+#footer .info {
+    padding: 4rem 0;
+}
+
+/* TO TOP */
+.totop{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.totop a {
+    border: .1rem solid #fff;
+    width: 3rem;
+    height: 2rem;
+}
+
+.totop a:hover{
+    background: #fff;
+}

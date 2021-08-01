@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUD-GALLERY</title>
+    <link rel="shortcut icon" href="resources/img/favicon5.png" type="image/x-icon">
+
+    <!-- CSS FILES -->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/gird.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="resources/css/style4.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    <!-- HERO SECTION START -->
+    <header id="home">
+        <nav style="z-index: 980;" uk-sticky="top: 200;">
+            <div class="row">
+                <a href="#home" class="logo"> 
+                    <img src="resources/img/logo.png" alt="logo"> 
+                </a>
+    
+                <ul class="nav-bar">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="call.html"> Contact </a></li>
+                    <li><a href="gallery.html"> Gallery </a></li>
+                    <li><a href="specification.html"> specifications </a></li>
+                </ul>
+                 <!-- MOBILE MENU START-->
+                 <div class="mobile-menu">
+                    <span onclick="openMenu()" class="menu-btn">&#9776;</span>
+                    <div id="hamburger" class="overly">
+                        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">
+                            <i class="lni lni-close"></i>
+                        </a>
+                        <div class="menu-container">
+                            <ul class="menu-items">
+                                <a onclick="closeMenu()" href="index.html"> Home </a>
+                                <a onclick="closeMenu()" href="#price"> Price </a>
+                                <a onclick="closeMenu()" href="call.html"> Contact </a>
+                                <a onclick="closeMenu()" href="gallery.html"> Gallery </a>
+                                <a onclick="closeMenu()" href="specification.html"> specifications </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- MOBILE MENU END-->
+    
+            </div> 
+
+        </nav>
+    
+            <div class="row">
+                   <div class="speci-text-box">
+                    <h1>oud h7<br>
+                        <span style= "font-weight: 400 ; display:block;">Gallery</span>
+                    </h1>
+                    <br>
+                    <p class="pointer"><span class="highlight">Home</span> /Specifications</p>
+                   </div>
+            </div>
+        
+    </header>
+<!-- HERO SECTION END-->
+
+<!-- GALLERY SECTION START-->
+
+<section id="gallery">
+
+    <div class="row">
+        <div class="gallery-text-box">
+            <h2>
+                image & video
+                <span style="color: red; width: 20rem;">_</span>
+            </h2>
+            <p class="little-des">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores laborum expedita. Expedita maxime minus rerum itaque doloribus laudantium suscipit, natus tempore, beatae debitis, repudiandae deleniti voluptatem? Perspiciatis, nemo nulla!
+            </p>
+       </div>
+    </div>
+
+    <div class="row">
+        <div class="filter">
+            <button class="btn-filter" data-filter="all"> ALL <span class="highlight"> / </span></button>
+            <button class="btn-filter" data-filter=".side"> SIDE <span class="highlight"> / </span></button>
+            <button class="btn-filter" data-filter=".top"> TOP <span class="highlight"> / </span></button>
+            <button class="btn-filter" data-filter=".fornt"> FORNT <span class="highlight"> / </span></button>
+            <button class="btn-filter" data-filter=".back"> BACK</button>
+        </div>
+    </div>
+
+    <div class="row container">
+
+        <div class="col span_1_of_4 mix side">
+            <img src="resources/img/sidez.png" alt="side">
+        </div>
+
+        <div class="col span_1_of_4 mix top">
+            <img src="resources/img/top.png" alt="top">
+        </div>
+        <div class="col span_1_of_4 mix back">
+            <img src="resources/img/backz.png" alt="back">
+        </div>
+
+        <div class="col span_1_of_4 mix fornt">
+            <img src="resources/img/forntz.png" alt="fornt">
+        </div>
+
+
+    </div>
+
+</section> 
+
+<!-- GALLERY SECTION END-->
+
+<!-- OFF SECTION START-->
+<section id="off"> 
+    
+    <div class="row"> 
+        <h2>only this month <br>
+            <span style="font-weight: 400;">
+                20% OFF
+            </span>
+        </h2>
+        <a href="#" class="btn btn-off"> buy now </a>
+    </div>
+    
+</section>
+<!-- OFF SECTION END-->
+
+<!-- FOOTER SECTION START--> 
+
+<footer id="footer">
+    
+    <div class="row">
+        <div class="col span_1_of_4">
+            <h3>services</h3>
+            <ul>
+                <li><a href="#"> My OUD </a></li>
+                <li><a href="#"> Press </a></li>
+                <li><a href="#"> Terms </a></li>
+                <li><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+    
+        <div class="col span_1_of_4">
+            <h3>OUD AG</h3>
+            <ul>
+                <li><a href="#"> Company </a></li>
+                <li><a href="#"> Corporate Strategy </a></li>
+                <li><a href="#"> Innovations </a></li>
+                <li><a href="#"> Careers</a></li>
+                <li><a href="#"> History</a></li>
+            </ul>
+        </div>
+    
+        <div class="col span_1_of_4">
+            <h3>Experience</h3>
+            <ul>
+                <li><a href="#"> Investor Relations</a></li>
+                <li><a href="#"> OUD City</a></li>
+                <li><a href="#"> OUD quattro</a></li>
+                <li><a href="#"> Sustainability</a></li>
+            </ul>
+        </div>
+    
+        <div class="col span_1_of_4">
+            <h3>Get In Tuch</h3>
+            <ul>
+                <li><a href="#"> 
+                    <span class="highlight"> info@owd.com </span>  e-mail us </a>
+                </li>
+                <li><a href="#"> 
+                    <span class="highlight">+1 441 544 656 </span>    Call us </a>
+                </li>
+                <li><a href="#">  
+                    <span class="highlight"> +1 441 544 656 </span> Fax us </a>
+                </li>
+                <li><a href="#"> Find us via <span class="highlight"> Google Map</span> </a></li>
+            </ul>
+        </div> 
+    </div>
+    <hr>
+    <div class="row">
+    
+        <div class="info"> 
+            <p class="copyright"> Copyright &copy; Symu.co</p>
+            <div class="social-icon">
+                <ul>
+                    <li><a href="#"><i class="lni lni-facebook-oval"></i></a></li>
+                    <li><a href="#"> <i class="lni lni-envelope"></i></a></li>
+                    <li><a href="#"> <i class="lni lni-instagram-original"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    <!-- TO-TOP-BUTTON -->
+    <div class="totop">
+        <a href="#" uk-totop uk-scroll></a>
+    </div>
+       
+    </footer>
+    <!-- FOOTER SECTION END-->
+
+
+
+<!-- JS FILES -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+    </script>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+<script src="vendors/js/mixitup.min.js"></script>
+<script src="resources/js/main.js"></script>
+    
+</body>
+</html>
